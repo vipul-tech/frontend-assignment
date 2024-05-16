@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First JS</title>
+    </head>
+    <body>
+        <button onclick="clearInterval(timerID)">Stop the Clock</button>
+        <p id="display"/>
+        <script>
+            timerID = setInterval(function(){displayTime()},1000);
+            function displayTime(){
+                let datevar = new Date();
+                document.getElementById("display").innerHTML = "Current time is : "+ datevar.toLocaleTimeString();
+            }
+        </script>
+    </body>
+</html>

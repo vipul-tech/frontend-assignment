@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+    </head>
+    <body>
+        <h2>Canvas Example</h2>
+        <canvas id="canvas" width="500" height="400" style="border:1px solid green"></canvas>
+        <script>
+            var canvas1 = document.getElementById("canvas");
+            var context = canvas1.getContext("2d");
+            context.fillStyle="yellow";
+            context.fillRect(10,10,250,350);
+        </script>
+    </body>
+</html>

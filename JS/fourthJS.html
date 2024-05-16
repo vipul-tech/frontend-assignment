@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First JS</title>
+    </head>
+    <body>
+        <p id="name"/>
+        <button onclick="displayName()">Display Name</button>
+        <script>
+            function displayName(){
+                var name = prompt("Enter name : ");
+                if(name=="")
+                    status="Invalid name entered...";
+                else
+                    status="Welcome "+ name;   
+                document.getElementById("name").innerHTML = status;
+            }
+        </script>
+    </body>
+</html>
